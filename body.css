@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+    background-color: #ff6f61;
+    padding: 20px 0;
+    margin: 0;
+    font-size: 2em;
+}
+
+.steps {
+    padding: 20px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(255,111,97,1) 0%, rgba(255,202,58,1) 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.step img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 3px solid #ffffff;
+}
+
+.step p {
+    font-size: 1.1em;
+    color: #ffffff;
+    margin: 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+button {
+    background-color: #ff6f61;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4a39;
+}
+
+@media (max-width: 600px) {
+    .step {
+        flex-direction: column;
+    }
+
+    .step img {
+        margin-bottom: 10px;
+    }
+}
